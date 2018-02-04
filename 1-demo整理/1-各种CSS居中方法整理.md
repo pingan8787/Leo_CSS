@@ -82,7 +82,7 @@
     <p>此法同样只适用于那些我们已经知道它们的宽度或高度的元素，并且遗憾的是它只支持IE9+,谷歌，火狐等符合w3c标准的现代浏览器。</p>
     <div class="main" style="position: relative;">
         <div style="background-color: #03f;position: absolute;width: 100px;height: 100px;left: 0;right: 0;top: 0;bottom: 0;margin: auto;"></div>
-    </div>
+    </div> 
 
     <b>8、使用浮动配合相对定位来进行水平居中</b>
     <p>浮动居中的原理是：把浮动元素相对定位到父元素宽度50%的地方，但这个时候元素还不是居中的，而是比居中的那个位置多出了自身一半的宽度，这时就需要他里面的子元素再用一个相对定位，把那多出的自身一半的宽度拉回来，而因为相对定位正是相对于自身来定位的，所以自身一半的宽度只要把left 或 right 设为50%就可以得到了，因而不用知道自身的实际宽度是多少。</p>
