@@ -102,50 +102,50 @@
 
 #### 1.2 子容器
 * 在主轴上如何伸缩：`flex`  
-![图片16](https://dn-mhke0kuv.qbox.me/089d48122453e9fc372c.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片16](https://dn-mhke0kuv.qbox.me/089d48122453e9fc372c.png?imageslim)  
 子容器是有弹性的（flex 即弹性），它们会自动填充剩余空间，子容器的伸缩比例由 `flex` 属性确定。  
 flex 的值可以是无单位数字（如：1, 2, 3），也可以是有单位数字（如：15px，30px，60px），还可以是 `none` 关键字。子容器会按照 `flex` 定义的尺寸比例自动伸缩，如果取值为 `none` 则不伸缩。  
 虽然 flex 是多个属性的缩写，允许 1 - 3 个值连用，但通常用 1 个值就可以满足需求，它的全部写法可参考下图。  
-![图片116](https://dn-mhke0kuv.qbox.me/78e9030183f686e0b6ed.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片116](https://dn-mhke0kuv.qbox.me/78e9030183f686e0b6ed.png?imageslim)  
 
-> 单独设置子容器如何沿交叉轴排列：`align-self`
-![图片126](https://dn-mhke0kuv.qbox.me/1d09fe5bb413a6dfa5dd.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+> 单独设置子容器如何沿交叉轴排列：`align-self`  
+![图片126](https://dn-mhke0kuv.qbox.me/1d09fe5bb413a6dfa5dd.png?imageslim)  
 
 每个子容器也可以单独定义沿交叉轴排列的方式，此属性的可选值与父容器 align-items 属性完全一致，如果两者同时设置则以子容器的 align-self 属性为准。
 
 > **flex-start**：起始端对齐  
-![图片136](https://dn-mhke0kuv.qbox.me/93d138727b9dd780bdda.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片136](https://dn-mhke0kuv.qbox.me/93d138727b9dd780bdda.png?imageslim)  
 
 > **flex-end**：末尾段对齐  
-![图片146](https://dn-mhke0kuv.qbox.me/112f075777fdcb6f5d6f.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片146](https://dn-mhke0kuv.qbox.me/112f075777fdcb6f5d6f.png?imageslim)  
   
 > **center**：居中对齐  
-![图片156](https://dn-mhke0kuv.qbox.me/d7b0131447247a5228fe.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片156](https://dn-mhke0kuv.qbox.me/d7b0131447247a5228fe.png?imageslim)  
 
 > **baseline**：基线对齐  
-![图片166](https://dn-mhke0kuv.qbox.me/26b04323df92c4b1b023.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片166](https://dn-mhke0kuv.qbox.me/26b04323df92c4b1b023.png?imageslim)  
 
 > **stretch**：拉伸对齐  
-![图片176](https://dn-mhke0kuv.qbox.me/ef196e2ba84c406c9ad6.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片176](https://dn-mhke0kuv.qbox.me/ef196e2ba84c406c9ad6.png?imageslim)  
 
 ### 2. 轴
 如图所示，**轴** 包括 **主轴** 和 **交叉轴**，我们知道 `justify-content` 属性决定子容器沿主轴的排列方式，`align-item`s 属性决定子容器沿着交叉轴的排列方式。那么轴本身又是怎样确定的呢？在 flex 布局中，`flex-direction` 属性决定主轴的方向，交叉轴的方向由主轴确定。  
-![图片17](https://dn-mhke0kuv.qbox.me/5f2a17efffe8f3ab78a4.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片17](https://dn-mhke0kuv.qbox.me/5f2a17efffe8f3ab78a4.png?imageslim)  
 
 * 主轴
 主轴的起始端由 `flex-start` 表示，末尾段由 `flex-end` 表示。不同的主轴方向对应的起始端、末尾段的位置也不相同。  
 
 > **向右**：flex-direction: row  
-![图片18](https://dn-mhke0kuv.qbox.me/da0c2a225cbbdba47297.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片18](https://dn-mhke0kuv.qbox.me/da0c2a225cbbdba47297.png?imageslim)  
 
 > **向下**：flex-direction: column  
-![图片19](https://dn-mhke0kuv.qbox.me/ab305a50ff35d7e7b6b4.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片19](https://dn-mhke0kuv.qbox.me/ab305a50ff35d7e7b6b4.png?imageslim)  
 
 > **向左**：flex-direction: row-reverse  
-![图片20](https://dn-mhke0kuv.qbox.me/f3b60f80ddd45974449d.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片20](https://dn-mhke0kuv.qbox.me/f3b60f80ddd45974449d.png?imageslim)  
 
 > **向上**：flex-direction: column-reverse  
-![图片21](https://dn-mhke0kuv.qbox.me/c219413da157decc5b9e.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片21](https://dn-mhke0kuv.qbox.me/c219413da157decc5b9e.png?imageslim)  
 
 * 交叉轴
 主轴沿逆时针方向旋转 90° 就得到了交叉轴，交叉轴的起始端和末尾段也由 `flex-start` 和` flex-end` 表示。  
@@ -157,19 +157,17 @@ flex 的值可以是无单位数字（如：1, 2, 3），也可以是有单位�
 ### 1. 父容器
 > 设置换行方式：flex-wrap  
 决定子容器是否换行排列，不但可以顺序换行而且支持逆序换行。  
-![图片22](https://dn-mhke0kuv.qbox.me/19fb0f3a31fa497191b8.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片22](https://dn-mhke0kuv.qbox.me/19fb0f3a31fa497191b8.png?imageslim)  
 
 > **nowrap**：不换行  
-![图片23](https://dn-mhke0kuv.qbox.me/a41d1342e46cd37cd09e.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片23](https://dn-mhke0kuv.qbox.me/a41d1342e46cd37cd09e.png?imageslim)  
 
 > **wrap**：换行  
-![图片24](https://dn-mhke0kuv.qbox.me/0566bf9682ffa0890624.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片24](https://dn-mhke0kuv.qbox.me/0566bf9682ffa0890624.png?imageslim)  
 
 > **wrap-reverse**：逆序换行  
-![图片25](https://dn-mhke0kuv.qbox.me/2f578fcc69919238bd3b.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
-
 逆序换行是指沿着交叉轴的反方向换行。  
-![图片26](https://dn-mhke0kuv.qbox.me/2f578fcc69919238bd3b.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片26](https://dn-mhke0kuv.qbox.me/2f578fcc69919238bd3b.png?imageslim)  
 
 
 > 轴向与换行组合设置：`flex-flow  `
@@ -183,48 +181,48 @@ flow 即流向，也就是子容器沿着哪个方向流动，流动到终点是
 
 > 多行沿交叉轴对齐：`align-content`  
 当子容器多行排列时，设置行与行之间的对齐方式。  
-![图片27](https://dn-mhke0kuv.qbox.me/ff9bd219375f048b3304.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片27](https://dn-mhke0kuv.qbox.me/ff9bd219375f048b3304.png?imageslim)  
 
 > **flex-start**：起始端对齐  
-![图片28](https://dn-mhke0kuv.qbox.me/0183db03d8fedadc4cf8.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片28](https://dn-mhke0kuv.qbox.me/0183db03d8fedadc4cf8.png?imageslim)  
 
 > **flex-end**：末尾段对齐  
-![图片29](https://dn-mhke0kuv.qbox.me/12e524438423ac7afc8c.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片29](https://dn-mhke0kuv.qbox.me/12e524438423ac7afc8c.png?imageslim)  
 
 > **center**：居中对齐  
-![图片30](https://dn-mhke0kuv.qbox.me/274a5c1282b997e423db.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片30](https://dn-mhke0kuv.qbox.me/274a5c1282b997e423db.png?imageslim)  
 
 > **space-around**：等边距均匀分布  
-![图片31](https://dn-mhke0kuv.qbox.me/4a435e3fd0cab3433631.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片31](https://dn-mhke0kuv.qbox.me/4a435e3fd0cab3433631.png?imageslim)  
 
 > **space-between**：等间距均匀分布  
-![图片32](https://dn-mhke0kuv.qbox.me/f50d931bdfeb6c24ccae.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片32](https://dn-mhke0kuv.qbox.me/f50d931bdfeb6c24ccae.png?imageslim)  
 
 > **stretch**：拉伸对齐  
-![图片33](https://dn-mhke0kuv.qbox.me/878b39463db6bc499fbc.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片33](https://dn-mhke0kuv.qbox.me/878b39463db6bc499fbc.png?imageslim)  
 
 ### 2. 子容器
 * 设置基准大小：`flex-basis`
 `flex-basis` 表示在不伸缩的情况下子容器的原始尺寸。主轴为横向时代表宽度，主轴为纵向时代表高度。  
-![图片33](https://dn-mhke0kuv.qbox.me/af0dbf4ca6e857ff5de8.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
-![图片33](https://dn-mhke0kuv.qbox.me/7c73d684a32fd8411db6.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片33](https://dn-mhke0kuv.qbox.me/af0dbf4ca6e857ff5de8.png?imageslim)  
+![图片33](https://dn-mhke0kuv.qbox.me/7c73d684a32fd8411db6.png?imageslim)  
 
 * 设置扩展比例：`flex-grow `   
 子容器弹性伸展的比例。如图，剩余空间按 1:2 的比例分配给子容器。 
-![图片33](https://dn-mhke0kuv.qbox.me/bcca55b82d18e2ac2367.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
-![图片33](https://dn-mhke0kuv.qbox.me/72e9f508dff25a474b40.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)   
+![图片33](https://dn-mhke0kuv.qbox.me/bcca55b82d18e2ac2367.png?imageslim)  
+![图片33](https://dn-mhke0kuv.qbox.me/72e9f508dff25a474b40.png?imageslim)   
 
 * 设置收缩比例：`flex-shrink `  
 子容器弹性收缩的比例。如图，超出的部分按 1:2 的比例从给子容器中减去。  
-![图片33](https://dn-mhke0kuv.qbox.me/38596937d4f86beeac0b.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
-![图片33](https://dn-mhke0kuv.qbox.me/d278e36c13b9643ff481.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片33](https://dn-mhke0kuv.qbox.me/38596937d4f86beeac0b.png?imageslim)  
+![图片33](https://dn-mhke0kuv.qbox.me/d278e36c13b9643ff481.png?imageslim)  
 
 * 设置排列顺序：`order`  
 改变子容器的排列顺序，覆盖 HTML 代码中的顺序，默认值为 0，可以为负值，数值越小排列越靠前。  
-![图片33](https://dn-mhke0kuv.qbox.me/4eb20f9bfc611e66b069.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片33](https://dn-mhke0kuv.qbox.me/4eb20f9bfc611e66b069.png?imageslim)  
 
 以上就是 flex 布局的全部属性，一共 12 个，父容器、子容器各 6 个，可以随时通过下图进行回顾。  
-![图片33](https://dn-mhke0kuv.qbox.me/0dd26d8e99257ff36443.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片33](https://dn-mhke0kuv.qbox.me/0dd26d8e99257ff36443.png?imageslim)  
 
 
 
