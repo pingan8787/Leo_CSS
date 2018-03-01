@@ -57,46 +57,57 @@
 
 ### 1. 容器
 > 容器具有这样的特点：父容器可以统一设置子容器的排列方式，子容器也可以单独设置自身的排列方式，如果两者同时设置，以子容器的设置为准。  
+
 ![图片3](https://dn-mhke0kuv.qbox.me/f443b657dbc39d361f68.png?imageslim)  
 
 
 #### 1.1 父容器
 * 设置子容器沿主轴排列：`justify-content`  
-`justify-content` 属性用于定义如何沿着主轴方向排列子容器。
+`justify-content` 属性用于定义如何沿着主轴方向排列子容器。  
 ![图片4](https://dn-mhke0kuv.qbox.me/be5b7f0e022a8da60ed8.png?imageslim)  
 
 > **flex-start**：起始端对齐  
+
 ![图片5](https://dn-mhke0kuv.qbox.me/ac1d8c5e7b4a2ba51ca7.png?imageslim)  
 
 > **flex-end**：末尾段对齐  
+
 ![图片6](https://dn-mhke0kuv.qbox.me/9ec9245881c2882a35a6.png?imageslim)  
 
 > **center**：居中对齐  
+
 ![图片7](https://dn-mhke0kuv.qbox.me/476461f1b9604a985046.png?imageslim)  
   
 > **space-around**：子容器沿主轴均匀分布，位于首尾两端的子容器到父容器的距离是子容器间距的一半。  
+
 ![图片8](https://dn-mhke0kuv.qbox.me/63119c88aa64853107a9.png?imageslim)  
 
 > **space-between**：子容器沿主轴均匀分布，位于首尾两端的子容器与父容器相切。  
+
 ![图片9](https://dn-mhke0kuv.qbox.me/495f46fc9c5c0c6d1e65.png?imageslim)  
 
 * 设置子容器如何沿交叉轴排列：`align-items`  
 `align-items` 属性用于定义如何沿着交叉轴方向分配子容器的间距。    
 ![图片10](https://dn-mhke0kuv.qbox.me/e7e6aa079f5333828c58.png?imageslim)  
 
-> **flex-start**：起始端对齐 
+> **flex-start**：起始端对齐  
+
 ![图片11](https://dn-mhke0kuv.qbox.me/56622862c7831a4d61be.png?imageslim)   
 
 > **flex-end**：末尾段对齐  
+
 ![图片12](https://dn-mhke0kuv.qbox.me/33519955a141be1e713a.png?imageslim)  
 
 > **center**：居中对齐  
+
 ![图片13](https://dn-mhke0kuv.qbox.me/f10513a47130d52f2aa8.png?imageslim)  
 
 > **baseline**：基线对齐，这里的 `baseline` 默认是指首行文字，即 `first baseline`，所有子容器向基线对齐，交叉轴起点到元素基线距离最大的子容器将会与交叉轴起始端相切以确定基线。  
+
 ![图片14](https://dn-mhke0kuv.qbox.me/f78e9f42be9a3f165f8f.png?imageslim)  
   
 > **stretch**：子容器沿交叉轴方向的尺寸拉伸至与父容器一致。  
+
 ![图片15](https://dn-mhke0kuv.qbox.me/160170b3d2022800ffea.png?imageslim)  
 
 
@@ -109,23 +120,29 @@ flex 的值可以是无单位数字（如：1, 2, 3），也可以是有单位�
 ![图片116](https://dn-mhke0kuv.qbox.me/78e9030183f686e0b6ed.png?imageslim)  
 
 > 单独设置子容器如何沿交叉轴排列：`align-self`  
+
 ![图片126](https://dn-mhke0kuv.qbox.me/1d09fe5bb413a6dfa5dd.png?imageslim)  
 
 每个子容器也可以单独定义沿交叉轴排列的方式，此属性的可选值与父容器 align-items 属性完全一致，如果两者同时设置则以子容器的 align-self 属性为准。
 
 > **flex-start**：起始端对齐  
+
 ![图片136](https://dn-mhke0kuv.qbox.me/93d138727b9dd780bdda.png?imageslim)  
 
 > **flex-end**：末尾段对齐  
+
 ![图片146](https://dn-mhke0kuv.qbox.me/112f075777fdcb6f5d6f.png?imageslim)  
   
 > **center**：居中对齐  
+
 ![图片156](https://dn-mhke0kuv.qbox.me/d7b0131447247a5228fe.png?imageslim)  
 
 > **baseline**：基线对齐  
+
 ![图片166](https://dn-mhke0kuv.qbox.me/26b04323df92c4b1b023.png?imageslim)  
 
 > **stretch**：拉伸对齐  
+
 ![图片176](https://dn-mhke0kuv.qbox.me/ef196e2ba84c406c9ad6.png?imageslim)  
 
 ### 2. 轴
@@ -136,15 +153,19 @@ flex 的值可以是无单位数字（如：1, 2, 3），也可以是有单位�
 主轴的起始端由 `flex-start` 表示，末尾段由 `flex-end` 表示。不同的主轴方向对应的起始端、末尾段的位置也不相同。  
 
 > **向右**：flex-direction: row  
+
 ![图片18](https://dn-mhke0kuv.qbox.me/da0c2a225cbbdba47297.png?imageslim)  
 
 > **向下**：flex-direction: column  
+
 ![图片19](https://dn-mhke0kuv.qbox.me/ab305a50ff35d7e7b6b4.png?imageslim)  
 
 > **向左**：flex-direction: row-reverse  
+
 ![图片20](https://dn-mhke0kuv.qbox.me/f3b60f80ddd45974449d.png?imageslim)  
 
 > **向上**：flex-direction: column-reverse  
+
 ![图片21](https://dn-mhke0kuv.qbox.me/c219413da157decc5b9e.png?imageslim)  
 
 * 交叉轴
@@ -160,9 +181,11 @@ flex 的值可以是无单位数字（如：1, 2, 3），也可以是有单位�
 ![图片22](https://dn-mhke0kuv.qbox.me/19fb0f3a31fa497191b8.png?imageslim)  
 
 > **nowrap**：不换行  
+
 ![图片23](https://dn-mhke0kuv.qbox.me/a41d1342e46cd37cd09e.png?imageslim)  
 
 > **wrap**：换行  
+
 ![图片24](https://dn-mhke0kuv.qbox.me/0566bf9682ffa0890624.png?imageslim)  
 
 > **wrap-reverse**：逆序换行  
@@ -184,21 +207,27 @@ flow 即流向，也就是子容器沿着哪个方向流动，流动到终点是
 ![图片27](https://dn-mhke0kuv.qbox.me/ff9bd219375f048b3304.png?imageslim)  
 
 > **flex-start**：起始端对齐  
+
 ![图片28](https://dn-mhke0kuv.qbox.me/0183db03d8fedadc4cf8.png?imageslim)  
 
 > **flex-end**：末尾段对齐  
+
 ![图片29](https://dn-mhke0kuv.qbox.me/12e524438423ac7afc8c.png?imageslim)  
 
 > **center**：居中对齐  
+
 ![图片30](https://dn-mhke0kuv.qbox.me/274a5c1282b997e423db.png?imageslim)  
 
 > **space-around**：等边距均匀分布  
+
 ![图片31](https://dn-mhke0kuv.qbox.me/4a435e3fd0cab3433631.png?imageslim)  
 
 > **space-between**：等间距均匀分布  
+
 ![图片32](https://dn-mhke0kuv.qbox.me/f50d931bdfeb6c24ccae.png?imageslim)  
 
 > **stretch**：拉伸对齐  
+
 ![图片33](https://dn-mhke0kuv.qbox.me/878b39463db6bc499fbc.png?imageslim)  
 
 ### 2. 子容器
