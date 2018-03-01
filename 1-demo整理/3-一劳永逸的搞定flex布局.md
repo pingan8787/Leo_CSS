@@ -48,56 +48,56 @@
     align-items: center
 }
 ```
-![图片1](https://dn-mhke0kuv.qbox.me/933e6f0857399ccf7e83.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片1](https://dn-mhke0kuv.qbox.me/933e6f0857399ccf7e83.png?imageslim)  
 
 就是这么简单，大功告成。等等，好像哪里不对，`justify-content` 和` align-items` 是啥？哪里可以看出横向、竖向的语义？是的，`flex` 的确没有那么简单，这就要从两个基本概念说起了。   
 
-![图片2](https://dn-mhke0kuv.qbox.me/221bb6de73e54f4104a1.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片2](https://dn-mhke0kuv.qbox.me/221bb6de73e54f4104a1.png?imageslim)  
 说来也不难，flex 的核心的概念就是 `容器` 和 `轴`。容器包括外层的` 父容器` 和内层的 `子容器`，轴包括 `主轴` 和 `交叉轴`，可以说 flex 布局的全部特性都构建在这两个概念上。flex 布局涉及到 12 个 CSS 属性（不含 `display: flex`），其中父容器、子容器各 6 个。不过常用的属性只有 4 个，父容器、子容器各 2 个，我们就先从常用的说起吧。  
 
 ### 1. 容器
 > 容器具有这样的特点：父容器可以统一设置子容器的排列方式，子容器也可以单独设置自身的排列方式，如果两者同时设置，以子容器的设置为准。  
-![图片3](https://dn-mhke0kuv.qbox.me/f443b657dbc39d361f68.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片3](https://dn-mhke0kuv.qbox.me/f443b657dbc39d361f68.png?imageslim)  
 
 
 #### 1.1 父容器
 * 设置子容器沿主轴排列：`justify-content`  
 `justify-content` 属性用于定义如何沿着主轴方向排列子容器。
-![图片4](https://dn-mhke0kuv.qbox.me/be5b7f0e022a8da60ed8.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片4](https://dn-mhke0kuv.qbox.me/be5b7f0e022a8da60ed8.png?imageslim)  
 
 > **flex-start**：起始端对齐  
-![图片5](https://dn-mhke0kuv.qbox.me/ac1d8c5e7b4a2ba51ca7.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片5](https://dn-mhke0kuv.qbox.me/ac1d8c5e7b4a2ba51ca7.png?imageslim)  
 
 > **flex-end**：末尾段对齐  
-![图片6](https://dn-mhke0kuv.qbox.me/9ec9245881c2882a35a6.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片6](https://dn-mhke0kuv.qbox.me/9ec9245881c2882a35a6.png?imageslim)  
 
 > **center**：居中对齐  
-![图片7](https://dn-mhke0kuv.qbox.me/476461f1b9604a985046.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片7](https://dn-mhke0kuv.qbox.me/476461f1b9604a985046.png?imageslim)  
   
 > **space-around**：子容器沿主轴均匀分布，位于首尾两端的子容器到父容器的距离是子容器间距的一半。  
-![图片8](https://dn-mhke0kuv.qbox.me/63119c88aa64853107a9.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片8](https://dn-mhke0kuv.qbox.me/63119c88aa64853107a9.png?imageslim)  
 
 > **space-between**：子容器沿主轴均匀分布，位于首尾两端的子容器与父容器相切。  
-![图片9](https://dn-mhke0kuv.qbox.me/495f46fc9c5c0c6d1e65.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片9](https://dn-mhke0kuv.qbox.me/495f46fc9c5c0c6d1e65.png?imageslim)  
 
 * 设置子容器如何沿交叉轴排列：`align-items`  
 `align-items` 属性用于定义如何沿着交叉轴方向分配子容器的间距。    
-![图片10](https://dn-mhke0kuv.qbox.me/e7e6aa079f5333828c58.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片10](https://dn-mhke0kuv.qbox.me/e7e6aa079f5333828c58.png?imageslim)  
 
 > **flex-start**：起始端对齐 
-![图片11](https://dn-mhke0kuv.qbox.me/56622862c7831a4d61be.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)   
+![图片11](https://dn-mhke0kuv.qbox.me/56622862c7831a4d61be.png?imageslim)   
 
 > **flex-end**：末尾段对齐  
-![图片12](https://dn-mhke0kuv.qbox.me/33519955a141be1e713a.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片12](https://dn-mhke0kuv.qbox.me/33519955a141be1e713a.png?imageslim)  
 
 > **center**：居中对齐  
-![图片13](https://dn-mhke0kuv.qbox.me/f10513a47130d52f2aa8.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片13](https://dn-mhke0kuv.qbox.me/f10513a47130d52f2aa8.png?imageslim)  
 
 > **baseline**：基线对齐，这里的 `baseline` 默认是指首行文字，即 `first baseline`，所有子容器向基线对齐，交叉轴起点到元素基线距离最大的子容器将会与交叉轴起始端相切以确定基线。  
-![图片14](https://dn-mhke0kuv.qbox.me/f78e9f42be9a3f165f8f.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片14](https://dn-mhke0kuv.qbox.me/f78e9f42be9a3f165f8f.png?imageslim)  
   
 > **stretch**：子容器沿交叉轴方向的尺寸拉伸至与父容器一致。  
-![图片15](https://dn-mhke0kuv.qbox.me/160170b3d2022800ffea.png?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)  
+![图片15](https://dn-mhke0kuv.qbox.me/160170b3d2022800ffea.png?imageslim)  
 
 
 #### 1.2 子容器
