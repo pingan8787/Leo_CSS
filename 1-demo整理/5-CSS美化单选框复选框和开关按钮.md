@@ -1,7 +1,3 @@
-> 这里整理几个demo，有分PC端和移动端。  
-
-# PC端
-
 ![美化 radio](http://p3nqtyvgo.bkt.clouddn.com/1.png)
 ```html
 <!--有简单的背景动画：-->
