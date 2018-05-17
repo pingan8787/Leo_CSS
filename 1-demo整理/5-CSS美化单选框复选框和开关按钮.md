@@ -298,3 +298,5 @@ label.bui-switch-label {
   }
 }
 ```
+
+> 参考文章 [用CSS3美化单选框 radio 、多选框 checkbox 和 switch开关按钮](http://www.css88.com/archives/9274)
