@@ -18,6 +18,7 @@ div{
 }
 ```
 ![预览](http://p3nqtyvgo.bkt.clouddn.com/a1.png)  
+
 计算关系是这样的：  
 ```
 body的font-size是继承自跟元素html，html的尺寸是浏览器默认尺寸14px；
@@ -35,7 +36,8 @@ div3的font-size=1.5*31.5px = 47.25px;
     font-size:1.5rem;
 }
 ```
-![预览](http://p3nqtyvgo.bkt.clouddn.com/a2.png) 
+![预览](http://p3nqtyvgo.bkt.clouddn.com/a2.png)   
+
 此时div3的font-size = 1.5*14px = 1.5*html的font-size。  
 
 另外需注意chrome强制最小字体为12号，即使设置成 10px 最终都会显示成 12px，当把html的font-size设置成10px,子节点rem的计算还是以12px为基准，所以网上很多文章提到的将html的font-size设为10方便计算不是那么可取。   
@@ -73,6 +75,7 @@ ele.style.fontSize=size+"px"
 }
 ```
 ![预览](http://p3nqtyvgo.bkt.clouddn.com/a3.png)  
+
 如果你要让这个元素始终铺满整个视口的可见区域：  
 ```css
 .box { 
@@ -81,6 +84,7 @@ ele.style.fontSize=size+"px"
 }
 ```
 ![预览](http://p3nqtyvgo.bkt.clouddn.com/a4.png)  
+
 
 ### 注意：
 vw, vh, vmin, vmax：IE9+局部支持；  
