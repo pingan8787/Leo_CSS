@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>纯 CSS 创作闪闪发光的霓虹灯文字</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        
+        .neon {
+            position: relative;
+            overflow: hidden;
+            /* 调高亮度 */
+            filter: brightness(200%);
+        }
+        
+        .text {
+            background-color: black;
+            color: white;
+            font-size: 80px;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            /* 文字不能被选中 */
+            user-select: none;
+        }
+        
+        .text::before {
+            /* 用伪元素和数据属性增加文字，产生描边效果 */
+            content: attr(data-text);
+            position: absolute;
+            color: white;
+            filter: blur(0.02em);
+            /* 用混色模式产生描边效果 */
+            mix-blend-mode: difference;
+        }
+        
+        .gradient {
+            position: absolute;
+            /* 设置渐变色背景 */
+            background: linear-gradient(45deg, red, gold, lightgreen, gold, red);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* 设置渐变色背景 */
+            mix-blend-mode: multiply;
+        }
+        
+        .spotlight {
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            right: 0;
+            bottom: 0;
+            /* 用径向渐变制作光影背景 */
+            background: radial-gradient( circle, white, transparent 25%) center / 25% 25%, radial-gradient( circle, white, black 25%) center / 12.5% 12.5%;
+            animation: light 5s linear infinite;
+            mix-blend-mode: color-dodge;
+        }
+        /* 设置光影移动的动画效果 */
+        
+        @keyframes light {
+            to {
+                transform: translate(50%, 50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="neon">
+        <span class="text" data-text="thanks">thanks</span>
+        <span class="gradient"></span>
+        <span class="spotlight"></span>
+    </div>
+</body>
+
+</html>
