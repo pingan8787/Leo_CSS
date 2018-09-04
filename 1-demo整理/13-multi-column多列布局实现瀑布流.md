@@ -209,3 +209,6 @@ avoid：避免在元素内部断行并产生新列
 
 </html>
 ```
+
+### 预览效果
+![景甜](http://p3nqtyvgo.bkt.clouddn.com/css_pubuliu.png)
