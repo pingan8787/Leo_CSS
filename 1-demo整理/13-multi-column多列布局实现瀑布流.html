@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>纯css实现瀑布流（multi-column多列及flex布局）</title>
+    <style>
+        body {
+            background: #e5e5e5;
+        }
+        
+        #root {
+            margin: 0 auto;
+            width: 1200px;
+            column-count: 4;
+            column-width: 240px;
+            column-gap: 20px;
+        }
+        
+        .item {
+            margin-bottom: 10px;
+            /* 防止多列布局，分页媒体和多区域上下文中的意外中断 */
+            break-inside: avoid;
+            background: #fff;
+        }
+        
+        .item:hover {
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+        }
+        
+        .itemImg {
+            width: 100%;
+            vertical-align: middle;
+        }
+        
+        .userInfo {
+            padding: 5px 10px;
+        }
+        
+        .avatar {
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        
+        .username {
+            margin-left: 5px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="item">
+            <img src="./img/1.jpg" alt="" class="itemImg">
+            <div class="userInfo">
+                <img src="./img/avatar.jpg" alt="" class="avatar">
+                <span class="username">景甜大小姐</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./img/2.jpg" alt="" class="itemImg">
+            <div class="userInfo">
+                <img src="./img/avatar.jpg" alt="" class="avatar">
+                <span class="username">景甜大小姐</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./img/3.jpg" alt="" class="itemImg">
+            <div class="userInfo">
+                <img src="./img/avatar.jpg" alt="" class="avatar">
+                <span class="username">景甜大小姐</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./img/4.jpg" alt="" class="itemImg">
+            <div class="userInfo">
+                <img src="./img/avatar.jpg" alt="" class="avatar">
+                <span class="username">景甜大小姐</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./img/5.jpg" alt="" class="itemImg">
+            <div class="userInfo">
+                <img src="./img/avatar.jpg" alt="" class="avatar">
+                <span class="username">景甜大小姐</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./img/6.jpg" alt="" class="itemImg">
+            <div class="userInfo">
+                <img src="./img/avatar.jpg" alt="" class="avatar">
+                <span class="username">景甜大小姐</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
