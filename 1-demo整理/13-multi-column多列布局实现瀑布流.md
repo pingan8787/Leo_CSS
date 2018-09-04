@@ -29,7 +29,7 @@ columns:200px 3;
 columns:200px;
 ```
 
-2. column-width：<length> | auto
+2. column-width：<' length '> | auto
 
 设置或检索对象每列的宽度；  
 auto：根据 <' column-count '> 自定分配宽度  
@@ -40,7 +40,7 @@ auto：根据 <' column-count '> 自定分配宽度
 column-width:200px;
 ```
 
-3. column-count：<integer> | auto
+3. column-count：<' integer '> | auto
 
 设置或检索对象的列数；  
 auto：根据 <' column-width '> 自定分配宽度  
@@ -51,7 +51,7 @@ auto：根据 <' column-width '> 自定分配宽度
 column-count:5;
 ```
 
-4. column-gap：<length> | normal
+4. column-gap：<' length '> | normal
 
 设置或检索对象的列与列之间的间隙
 ```css
@@ -76,7 +76,7 @@ column-gap:normal;
 column-rule:10px solid #090;
 ```
 
-6. column-rule-width：<length> | thin | medium | thick
+6. column-rule-width：<' length '> | thin | medium | thick
 
 medium：定义默认厚度的边框;
 thin：定义比默认厚度细的边框;
