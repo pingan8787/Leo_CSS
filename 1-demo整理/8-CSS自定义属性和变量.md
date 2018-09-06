@@ -36,8 +36,8 @@
 :root {
   --main-font: Helvetica, Arial, sans-serif;
 }
-p {                                    1
-  font-family: var(--main-font);       1
+p { 
+  font-family: var(--main-font);
 }
 ```
 * 1 把段落的字体定义为 Helvetica, Arial, sans-serif
@@ -48,7 +48,7 @@ p {                                    1
 ```css
 :root {
   --main-font: Helvetica, Arial, sans-serif;
-  --brand-color: #369;                           1
+  --brand-color: #369;
 }
 p {
   font-family: var(--main-font);
@@ -66,8 +66,8 @@ var()函数支持第二个参数，代表一个默认值。假如一个变量被
   --brand-color: #369;
 }
 p {
-  font-family: var(--main-font, sans-serif);         1
-  color: var(--secondary-color, blue);               2
+  font-family: var(--main-font, sans-serif); 
+  color: var(--secondary-color, blue);
 }
 ```
 * 1 声明一个默认值 sans-serif
@@ -93,23 +93,25 @@ p {
 [ 代码片段 2.27 页面上不同上下文的两个面板 ]
 ```html
 <body>
-  <div class="panel">                               1
+  <div class="panel">
     <h2>Single-origin</h2>
     <div class="body">
       We have built partnerships with small farms
       around the world to hand-select beans at the
       peak of season. We then careful roast in
-      small batches to maximize their potential.    </div>
+      small batches to maximize their potential.
+    </div>
   </div>
 
-  <aside class="dark">                              2
-    <div class="panel">                             2
+  <aside class="dark">
+    <div class="panel">
       <h2>Single-origin</h2>
       <div class="body">
         We have built partnerships with small farms
         around the world to hand-select beans at the
         peak of season. We then careful roast in
-        small batches to maximize their potential.      </div>
+        small batches to maximize their potential. 
+      </div>
     </div>
   </aside>
 </body>
@@ -123,16 +125,16 @@ p {
 [ 代码片段 2.28 利用变量定义面板的颜色 ]
 ```html
 :root {
-  --main-bg: #fff;                       1
-  --main-color: #000;                    1
+  --main-bg: #fff; 
+  --main-color: #000;
 }
 .panel {
   font-size: 1rem;
   padding: 1em;
   border: 1px solid #999;
   border-radius: 0.5em;
-  background-color: var(--main-bg);      2
-  color: var(--main-color);              2
+  background-color: var(--main-bg);
+  color: var(--main-color); 
 }
 .panel > h2 {
   margin-top: 0;
@@ -152,11 +154,11 @@ p {
 [ 代码片段 2.29 设置深色容器的样式 ]
 ```css
 .dark {
-  margin-top: 2em;                   1
+  margin-top: 2em; 
   padding: 1em;
-  background-color: #999;            2
-  --main-bg: #333;                   3
-  --main-color: #fff;                3
+  background-color: #999; 
+  --main-bg: #333;      
+  --main-color: #fff;  
 }
 ```
 * 1 在深色容器和上一个容器间设定一个margin
@@ -176,9 +178,9 @@ p {
 ```html
 <script type="text/javascript">
   var rootElement = document.documentElement;
-  var styles = getComputedStyle(rootElement);                 1
-  var mainColor = styles.getPropertyValue('--main-bg');       2
-  console.log(String(mainColor).trim());                      3
+  var styles = getComputedStyle(rootElement);
+  var mainColor = styles.getPropertyValue('--main-bg'); 
+  console.log(String(mainColor).trim());
 </script>
 ```
 * 1 获取元素的样式对象（style object）
@@ -192,12 +194,12 @@ p {
 [ 图 2.15 JavaScript可以通过改变变量–main-bg的值改变面板的背景色 ]
 ![图 2.15](https://mmbiz.qpic.cn/mmbiz_jpg/meG6Vo0MeviaxCJic1Z07PfOw7aEPRsZtsvDyibicia4t3oMl6DibYb4TG6Pyzamvj8deOaeWCFOA7AlS4hCSt8cXktg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1)
 
-下面的代码片段，会在根元素下给—main-bg定义一个新的值，在<script>标签的最下面，加上这些的代码。
+下面的代码片段，会在根元素下给—main-bg定义一个新的值，在`<script>`标签的最下面，加上这些的代码。
 
 [ 代码片段 2.31 在JavaScript定义一个自定义变量的值 ]
 ```javascript
 var rootElement = document.documentElement;
-rootElement.style.setProperty('--main-bg', '#cdf');            1
+rootElement.style.setProperty('--main-bg', '#cdf');
 ```
 * 1 把根元素下的 –main-bg 定义为浅蓝色
 
@@ -208,14 +210,14 @@ rootElement.style.setProperty('--main-bg', '#cdf');            1
 
 自定义属性是一个全新的CSS领域，开发者才刚刚开始探索。因为目前浏览器的支持比较有限，所以还没有到使用它的“黄金时间”。我相信，一段时间之后，你会看到很多关于自定义属性的最佳实践和新颖的玩法。这是你需要留意的。尝试使用自定义属性，看看你可以做出些什么吧。
 
-需要关注的一点，如果你使用var()声明，低版本浏览器不能识别就会忽略它。如果可以的话，给那些浏览器提供一个回退（fallback）方案。
+需要关注的一点，如果你使用`var()`声明，低版本浏览器不能识别就会忽略它。如果可以的话，给那些浏览器提供一个回退（fallback）方案。
 
 [ 代码片段（没有编号） ]
 ```css
 color: black;
 color: var(--main-color);
 ```
-自定义属性原生的动态特性，并不是总是可以使用的，可以关注它的浏览器支持情况http://caniuse.com。
+自定义属性原生的动态特性，并不是总是可以使用的，可以关注它的[浏览器支持情况](http://caniuse.com)。
 ## 总结
 
 * 拥抱和使用相对单位，让页面的结构去定义样式代码的含义
