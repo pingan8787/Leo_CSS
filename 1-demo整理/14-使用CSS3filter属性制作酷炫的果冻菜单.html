@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>14-使用CSS3filter属性制作酷炫的果冻菜单</title>
+    <style>
+        .blobs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            filter: url(#goo);
+        }
+        
+        .circle {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+            transform: translate(0, -48px);
+            background: hsl(337, 70%, 58%);
+            clip-path: circle(42px at center);
+        }
+        
+        .circle.main {
+            z-index: 2;
+        }
+        
+        .first {
+            transition: transform 0.5s 100ms ease-out;
+            background: hsl(307, 70%, 58%);
+        }
+        
+        .second {
+            transition: transform 0.5s 300ms ease-out;
+            background: hsl(277, 70%, 58%);
+        }
+        
+        .last {
+            transition: transform 0.5s 500ms ease-out;
+            background: hsl(247, 70%, 58%);
+        }
+        
+        .first.show {
+            transform: translate(-100px, -120px);
+        }
+        
+        .second.show {
+            transform: translate(0, -150px);
+        }
+        
+        .last.show {
+            transform: translate(100px, -120px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blobs">
+        <div class="circle main">main</div>
+        <div class="circle sub first">1</div>
+        <div class="circle sub second">2</div>
+        <div class="circle sub last">3</div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
+    <script>
+        const button = document.querySelector('.circle.main');
+        const circles = document.querySelectorAll('.circle.sub');
+
+        button.addEventListener('click', () => {
+            circles.forEach(ele => {
+                ele.classList.toggle("show");
+            })
+        })
+    </script>
+</body>
+
+</html>
