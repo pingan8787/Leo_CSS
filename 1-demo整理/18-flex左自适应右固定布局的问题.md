@@ -60,8 +60,8 @@
     width: 200px;
     margin-left: 10px;
 }
-```   
-![UI设计稿2](http://images.pingan8787.com/70-UI%E7%A4%BA%E6%84%8F%E5%9B%BE2.png)     
+```
+![UI设计稿2](http://images.pingan8787.com/70-UI%E7%A4%BA%E6%84%8F%E5%9B%BE.png)     
 
 这效果。。有点无语。。右边的圆角去哪里了呢，并且在控制台查看元素，会看到实际`span`元素的宽度非常的宽，且超过父容器`#left`，而`#left`实实在在的还是正常的宽度。   
 思考了一会，脑子了出现了各种元素的层叠关系，于是给实际文本内容外面，再添加一层div，来控制内容的宽度。   
