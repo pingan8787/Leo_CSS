@@ -1,6 +1,10 @@
 ## 💌仓库介绍
 **CSS 系列**更新一些原创和网络上的优秀文章，将文章整理下来，方便自己以后学习和复习，喜欢的朋友欢迎 👉star。
 
+推荐我的另一个仓库 [《Leo-JavaScript》](https://github.com/pingan8787/Leo-JavaScript)。
+
+ [《Leo-JavaScript》](https://github.com/pingan8787/Leo-JavaScript)是我自己对 JavaScript 学习资料的整理，包括《Cute-JavaScript》、框架、HTTP、GraphQL、TS、Webpack等，还有很多demo和文章，也是作为自己学习结果的输出，喜欢的朋友欢迎stat。:rocket:。
+
 ### 关于作者
 [![博客](http://images.pingan8787.com/icon_my1.png)](http://www.pingan8787.com)
 [![知乎](http://images.pingan8787.com/icon_zhihu1.png)](https://zhuanlan.zhihu.com/cute-javascript)
