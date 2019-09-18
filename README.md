@@ -62,6 +62,8 @@
 
 23-[《复习盒模型》](https://github.com/pingan8787/Leo_CSS/blob/master/article/23-复习盒模型.md)
 
+24-[《有趣的CSS弹跳动画》](https://github.com/pingan8787/Leo_CSS/blob/master/article/24-有趣的CSS弹跳动画.md)
+
 
 |Author|王平安|
 |---|---|
