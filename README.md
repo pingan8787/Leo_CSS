@@ -64,7 +64,7 @@
 
 24-[《有趣的CSS弹跳动画》](https://github.com/pingan8787/Leo_CSS/blob/master/article/24-有趣的CSS弹跳动画.md)
 
-25-[《CSS Grid 网格布局入门》](https://github.com/pingan8787/Leo_CSS/blob/master/article/25-CSS Grid 网格布局入门.md)
+25-[《CSS布局之Grid网格布局入门》](https://github.com/pingan8787/Leo_CSS/blob/master/article/25-CSS布局之Grid网格布局入门.md)
 
 
 |Author|王平安|
